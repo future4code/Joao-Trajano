@@ -1,0 +1,200 @@
+/** 
+  *
+  *  ESTILOS GERAIS 
+  *
+  **/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+#div-first {
+    background-color: #fe7e02;
+    padding: 10px 5px 10px 5px;
+    color: white;
+    text-align: center;
+}
+
+input {
+    height: 20px;
+    width: 500px;
+}
+
+button:focus {
+    color: white;
+}
+
+img {
+    width: 100px;
+}
+
+div img {
+    background: white;
+}
+
+.botao-amarelo {
+    background-color: #ffaf43;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    border: none;
+}
+
+.botao-amarelo:hover {
+    background-color: #c44f00;
+}
+
+.container {
+    height: 500px;
+    text-align: center;
+}
+
+.icone {
+    height: 15px;
+    width: 15px;
+}
+
+
+/** 
+  *
+  *  ESTILOS HOME 
+  *
+  **/
+
+#container-de-descricao {
+    background-color: #2274a5;
+    color: white;
+    padding-top: 100px ;
+}
+
+#container-de-descricao > ol {
+    padding: 15px 0px;
+    
+}
+
+#container-de-descricao > ol > li {
+    width: 20%;
+    margin: auto;
+}
+
+#container-para-comprar {
+    background-color: #e7eb90;
+    padding: 15px;
+}
+
+#container-para-comprar {
+    background-color: #e7eb90;
+    padding: 15px;
+}
+
+#container-para-comprar>div>p {
+    color: #c44f00;
+    padding: 100px 0;
+    font-size: 60px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+
+
+
+/**
+  *
+  *  ESTILOS COMPRAR 
+  *
+  **/
+
+div:nth-child(2),
+div:last-child {
+    text-align: center;
+}
+
+table {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+td button {
+    background-color: #fadf63;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    color: black;
+    
+}
+
+.container-do-search {
+    margin-top: 20px;
+    height: 100px;
+}
+
+
+#back-button {
+    background-color: black;
+    width: 100px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 10px;
+    color: black;
+}
+
+#back-button:hover {
+    background-color: #635a3d
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid grey;
+}
+
+@keyframes swing
+{
+    15%
+    {
+        transform: translateX(5px);
+    }
+
+    30%
+    {
+        transform: translateX(-5px);
+    }
+
+    50%
+    {
+        transform: translateX(3px);
+    }
+
+    65%
+    {
+        transform: translateX(-3px);
+    }
+
+    80%
+    {
+        transform: translateX(2px);
+    }
+
+    100%
+    {
+        transform: translateX(0);
+    }
+}
+
+.swing:hover
+{    
+    animation: swing 1s ease;
+    animation-iteration-count: 1;
+}
