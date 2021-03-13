@@ -1,35 +1,145 @@
-body {
-    width: 100vw;
-    height: 100vh;
+* {
     padding: 0;
     margin: 0;
 }
 
-div {
-    border: 1px solid black;
+
+#container-line-one {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 16px;
+    padding: 16px;
+}
+
+#container-line-two {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 16px;
+    padding: 16px;
+}
+
+#container-line-two-inside {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-column-gap: 16px;
+    padding-top: 16px;
+    padding: 16px;
+
 }
 
 #first-block {
     background-color: red;
+    height: 20vh;
 }
 
 .blue-block {
     background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+
 }
 
 .yellow-block {
     background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .green-block {
     background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .black-block {
     background-color: black;
     color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 64vh;
 }
 
 .white-block {
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    min-height: 16vh;
+    flex-grow: 1;
+}
+
+/* 
+    Responsividade
+    Foi usado como referência, a tabela do Bootstrap.
+    Documentação: https://getbootstrap.com/docs/4.0/layout/grid/
+*/
+
+@media screen and (max-width: 960px) {
+
+    #container-line-one {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .green-block {
+        grid-column: 1 / -1;
+        height: 25vh;
+    }
+
+    #container-line-two-inside {
+        grid-template-columns: repeat(2, auto);
+        grid-row-gap: 16px;
+        padding-bottom: 16px;
+    }
+
+    #block-eleven {
+        grid-column: 1 / -1;
+    }
+
+
+}
+
+@media screen and (max-width: 720px) {
+
+    #main-container {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .blue-block {
+        grid-column: 1 / -1;
+    }
+
+    .yellow-block {
+        grid-column: 1 / -1;
+        min-height: 25vh;
+    }
+
+    .green-block {
+        grid-column: 1 / -1; 
+    }
+
+    .black-block {
+        grid-column: 1 / -1;
+       
+    }
+
+    .white-block {
+        grid-column: 1 / -1;
+    }
+
+    #container-line-two {
+        grid-row-gap: 16px ;
+    }
+
 }
