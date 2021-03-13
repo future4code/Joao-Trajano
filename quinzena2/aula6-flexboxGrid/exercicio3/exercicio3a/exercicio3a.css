@@ -25,10 +25,6 @@ body {
 #blank {
     background-color: black;
     display: flex;
-    /*
-        height:30vh;
-        width: 40%; 
-    */
 }
 
 .green-background {
