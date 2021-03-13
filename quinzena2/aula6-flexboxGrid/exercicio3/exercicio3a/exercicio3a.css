@@ -14,20 +14,21 @@ body {
 
 #middle-container {
     display: flex;
-    justify-content: center;
 }
-/* #vertical-middle-container {
-    display: flex;
-} */
 
 #content2 {
     display: flex;
-    flex-grow: 1;
+    flex-grow: 10;
+    
 }
 
 #blank {
     background-color: black;
-    width: 20px;
+    display: flex;
+    /*
+        height:30vh;
+        width: 40%; 
+    */
 }
 
 .green-background {
@@ -64,7 +65,7 @@ body {
     justify-content: center;
     align-items: center;
     height:30vh;
-    width: 40%;
+    width: 60%;
 }
 
 .red-background {
@@ -89,4 +90,19 @@ body {
     align-items: center;
     justify-content: center;
     height: 40px
+}
+
+#vertical-middle-container {
+  display: flex;
+  flex-grow: 3;
+  flex-direction: column;
+}
+
+#image {
+    display: flex;
+    flex-grow: 1;
+}
+#extra {
+    display: flex;
+    flex-grow: 1;
 }
